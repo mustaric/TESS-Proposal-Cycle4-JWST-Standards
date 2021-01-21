@@ -219,14 +219,15 @@ The \jwst\ science programs span all areas of science from the outer solar syste
 %the calibration ensuring that the stars are not variable during  of the c As a simple example, those looking for evidence of a dust disk from infrared excesses will want to compare the photometry across all of the JWST bands.  Something with Galaxies....something with exoplanets....\textit{Short paragraph on science programs that require accurate photometry to emphasize the impact}
 
 %The JWST calibration program is performed by observing NN stars with various instruments ... \textit{Describe how photometric standards are used emphasizing our assumptions about photometric stability}
+%Even some white dwarfs, which are frequently used as standards, can show dynamic variability due to magnetic fields, pulsations and binarity \citep{Hermes2017}.
 
-Time series missions like \tess\ and \kepler\ have taught us that stars can vary in brightness for a variety of reasons at a variety of time scales. Pulsating stars exist across the HR diagram and have periods from years to minutes. Many stars show evidence of stellar activity which manifests as stellar spots and unexpected flares. Other stars change brightness because of dust, planets or binarity.  Even some white dwarfs, which are frequently used as standards, can show dynamic variability due to magnetic fields, pulsations and binarity \citep{Hermes2017}. Cautionary tales of unexpected variations in stars are now common in the literature, for example: 
+Time series missions like \tess\ and \kepler\ have taught us that stars can vary in brightness for a variety of reasons at a variety of time scales \citep{Hermes2017}. Pulsating stars exist across the HR diagram and have periods from years to minutes. Many stars show evidence of stellar activity which manifests as stellar spots and unexpected flares. Other stars change brightness because of dust, planets or binarity.  Cautionary tales of unexpected variations in stars are now common in the literature, for example: 
 \begin{itemize}
     \item  Boyajian's star, KIC~8462852 \citep{Boyajian2016}, was discovered using \kepler\ data, and it shows unexplained drops in flux as large as 20\% at random times.
     \item Several triple star systems were identified in the \kepler\ data \citep{Orosz2015} where eclipses appeared and disappeared following third body fly-bys. 
     \item The nearby red supergiant Betelgeuse \citep{Guinan2019} dimmed by more than 1 visual magnitude in 2019, the deepest decline reported in 50 plus years of observations \citep{Levesque2020ApJ}.
-    \item Some white dwarfs show random or pseudo-periodic dips in brightness caused by disintegrating planets. These dips are as large as 40\% and only last for a few minutes \citep{Vanderburg2015}.
-    \item The pulsating white dwarf GD~358 suddenly changed the period and amplitude of its pulsations \citep{Montgomery2010}, showing that even regular pulsations of simple stars can suddenly change.
+    \item Some white dwarfs show random or pseudo-periodic dips in brightness caused by disintegrating planets. These dips are as large as 40\% and only last a few minutes \citep{Vanderburg2015}.
+    \item The pulsating white dwarf GD~358 suddenly changed the period and amplitude of its pulsations \citep{Montgomery2010}, showing that even predictable pulsations can suddenly change.
 \end{itemize}
 
 While ideally the \tess\ observations would occur at the same time as the \jwst\ observations, neither mission has flexibility in its scheduling to make that possible.  However, because \tess\ Cycle 4 overlaps the first cycle of \jwst\ science time, the observations will occur within a few months of each other, allowing the best chance to see the ``current'' state of the star's variability. Also, because \tess\ is able to observe in the infrared, like \jwst, the observed amplitudes of any variability will match those seen by \jwst.
@@ -254,12 +255,8 @@ If successful, by the end of Cycle 4 there will be 2-minute \tess\ observations 
 
 
 \section{Analysis Plan and Technical Feasibility}
-Thirty-one \jwst\ spectro-photometric standards are observable during \tess\ Cycle 4, six of which have less than two sectors of any existing TESS observations. Our target list prioritizes those with the fewest TESS sectors already in the archive. The targets range in \tess\ magnitudes from 4 to 16 yielding a photometric precision ranging from .006\% to .15\%, with significantly higher precision for periodic phenomena.  We plan to analyze the variability of these targets using the Lightkurve software package \citep{2018ascl.soft12013L}. We will look for both periodic variability and sudden changes in brightness using a variety of detection methods including periodograms, transit search algorithms and visual inspection. We will examine the crowding of each target to adjust the amplitudes of any observed variability. Finally, we will report the photometric limits, or any detected variability, in a refereed paper.
+Thirty-one \jwst\ spectro-photometric standards are observable during \tess\ Cycle 4, six of which have less than two sectors of any existing TESS observations. Our target list prioritizes those with the fewest TESS sectors already in the archive. The targets range in \tess\ magnitudes from 4 to 16 yielding a photometric precision ranging from 0.006\% to 0.15\%, with significantly higher precision for periodic phenomena.  We plan to analyze the variability of these targets using the Lightkurve software package \citep{2018ascl.soft12013L}. We will look for both periodic variability and sudden changes in brightness using a variety of detection methods including periodograms, transit search algorithms and visual inspection. We will examine the crowding of each target to adjust the amplitudes of any observed variability. Finally, we will report the photometric limits, or any detected variability, in a refereed paper.
 
-
-%Discuss how you plan to analyze the \tess\ data. Provide text and figures showing that the proposed \tess\ investigations are feasible; consider the 
-%\tess\ survey strategy, target observability, and required signal-to-noise, etc. The \tess\ Science 
-%Support Center (\href{https://heasarc.gsfc.nasa.gov/docs/tess/}{TSSC}) makes several tools available to help estimate these quantities. 
 
 \clearpage
 
