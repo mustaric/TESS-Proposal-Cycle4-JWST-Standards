@@ -142,8 +142,11 @@
 \newcommand{\lumcgs}{ergs~s$^{-1}$}
 \newcommand{\rj}{$R_{\textrm{\scriptsize Jup}}$}
 \newcommand{\mj}{$M_{\textrm{\scriptsize Jup}}$}
-\newcommand{\ms}{m~s$^{-1}$}
-
+\newcommand{\mnras}{MNRAS}
+\newcommand{\apjl}{ApJL}
+\newcommand{\apj}{ApJ}
+\newcommand{\nat}{Nature}
+\newcommand{\pasp}{PASP}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Start of document %%%%% 
@@ -202,13 +205,13 @@ MONITORING THE JWST SPECTRO-PHOTOMETRIC STANDARDS
 
 %This will be removed and added to the submission form. Avoid latex.
 %\section{Abstract}
-%We propose to use the TESS 2-minute cadence to monitor the James Webb Space Telescope (JWST) spectro-photometric standard stars for unexpected variability. These stars are necessary to accurately calibrate the absolute and relative flux JWST receives across its range of infrared wavebands. The standard star list used by JWST include white dwarf stars, and main sequence stars of spectral type B9 to G1. By monitoring these stars with TESS at a 2-minute cadence we will be able to determine if the star has recently shown evidence of brightness variations due to flares, pulsations or stellar spots. Additionally, we will also be able to check that each star has not recently undergone occultations from planets or dust or show evidence of long term variations like recently seen in Betelgeuse \citep{Guinan2019}. By monitoring these stars with TESS at a short cadence we add to our understanding of the stability of the stars and thereby enable the JWST calibrations team to provide the best spectro-photometric calibrations to the JWST data. 
+%We propose to use the TESS 2-minute cadence to monitor the James Webb Space Telescope (JWST) spectro-photometric standard stars for unexpected variability. These stars are necessary to accurately calibrate the absolute and relative flux JWST receives across its range of infrared wavebands. The standard star list used by JWST include white dwarf stars, and main sequence stars of spectral type B9 to G1. By monitoring these stars with TESS at a 2-minute cadence we will be able to determine if the star has recently shown evidence of brightness variations due to flares, pulsations or stellar spots. Additionally, we will also be able to check that each star has not recently undergone occultations from planets or dust, as seen for some white dwarf stars. For some stars we can check for evidence of long term variations like recently seen in Betelgeuse. By monitoring these stars with TESS at a short cadence we add to our understanding of the stability of the stars and thereby enable the JWST calibrations team to provide the best spectro-photometric calibrations of the JWST data. 
 
 
  %REMINDER:  THIS NEEDS to be written anonymously
 \section{Scientific Justification and Perceived Impact}
 
-The James Webb Space Telescope (\jwst) is planning to launch in October 2021 and will revolutionize our view of all areas of astrophysics, from Galaxy formation to exoplanets. To accomplish these goals the mission will also observe a few dozen spectro-photometric standard stars with the goal of achieving at least a 2\% absolute flux calibration. \jwst\ will observe a sample of stars with well known absolute flux and spectral shape across the 0.6 to 28.5 microns range. The success of this program will not only enable the cross-instrument calibration of the \jwst\ science instruments, but also with \hst, \spitzer, and other ground-based telescopes.
+The James Webb Space Telescope (\jwst) is planning to launch in October 2021 and will revolutionize our view of all areas of astrophysics, from Galaxy formation to exoplanets. To accomplish these goals the mission will observe a few dozen spectro-photometric standard stars with the goal of achieving at least a 2\% absolute flux calibration. These calibration stars are chosen because they have well-known absolute flux and spectral shape across the 0.6 to 28.5 microns range. The success of this program will not only enable the cross-instrument calibration of the \jwst\ science instruments, but also with \hst, \spitzer, and other ground-based telescopes \citep{Bohlin2014PASP}.
 
 The \jwst\ science programs span all areas of science from the outer solar system, to exoplanet atmospheres, stellar nurseries, and the formation of the first Galaxies. Any science program that plans to combine \jwst\ infrared spectra and photometry with other telescopes will require a precise understanding of the flux received by the \jwst\ instruments. Even those looking to combine spectral and photometric flux across different \jwst\ wavebands will need to understand the relative sensitivities of these instruments. If the calibration stars change brightness between exposures, the flux calibration could be systematically off. While using a suite of stars mitigates against obvious outliers, monitoring these  by adding evidence that these stars have shown no variability of certain types will improve the calibration team's understanding of which stars are possible outliers and thereby establish the best possible calibration for \jwst\ data.  
 
@@ -216,17 +219,17 @@ The \jwst\ science programs span all areas of science from the outer solar syste
 
 %The JWST calibration program is performed by observing NN stars with various instruments ... \textit{Describe how photometric standards are used emphasizing our assumptions about photometric stability}
 
-Time series missions like \tess\ and \kepler\ have taught us that stars can vary in brightness for a variety of reasons. Pulsating stars exist across the HR diagram at a variety of periods.  Many stars show evidence of stellar activity which manifest as stellar spots and unexpected flares. Other stars change brightness because dust or planets pass between us and the line of sight of the star. Some of these variations are as regular as clock work (pulsations and rotation from spots), while others occur unexpectedly and only become apparent with high cadence observations. A few examples of stars changing flux in unexpected ways include:
+Time series missions like \tess\ and \kepler\ have taught us that stars can vary in brightness for a variety of reasons. Pulsating stars exist across the HR diagram and have periods from days to minutes. Many stars show evidence of stellar activity which manifest as stellar spots and unexpected flares. Other stars change brightness because dust, planets or other stars passing between us and the line-of-sight of the star. Even some white dwarf stars, which are frequently used as standards, can show dynamic variability due to magnetic fields, pulsations and binarity \citep{Hermes2017}. Cautionary tales of unexpected variations in stars are now common in the literature, for example: 
 \begin{itemize}
     \item  Boyajian's star, KIC~8462852 \citep{Boyajian2016}, was discovered using \kepler\ data, and shows unexplained drops in flux as large as 20\% at a random times.
     \item The nearby, giant star Betelgeuse \citep{Guinan2019} dimmed by more than 1 visual magnitude in 2019, a dimming larger than had ever been reported in 50 plus years of observations \citep{Levesque2020ApJ}.
-    \item Some white dwarf stars have been discovered to show sudo-periodic dips in brightness caused by disintegrating planets.  These dips are as large as 40\% and last for several minutes \citep{Vanderburg2015}.
-    \item The pulsating white dwarf star, GD~358, suddenly changed the period and amplitude of its pulsations \citep{Montgomery2010}. GD 358 was observed to move all of its pulsation energy into a single pulsation mode with amplitudes as large as 2\% in 1996. Since then, white dwarfs have been discovered to vary in a variety of ways \citep{Hermes2017} due to magnetic fields, pulsations and binarity.
+    \item Some white dwarf stars have been discovered to show sudo-periodic dips in brightness caused by disintegrating planets. These dips are as large as 40\%, last for several minutes and are aperiodic \citep{Vanderburg2015}.
+    \item The pulsating white dwarf star, GD~358, suddenly changed the period and amplitude of its pulsations \citep{Montgomery2010}, showing that even regular pulsations of simple stars can suddenly change.
 \end{itemize}
 
-Because of telescopes with precise, high-cadence, photometry like \tess\, it has become clear that such stories are not entirely uncommon.  \tess\ Cycle 4 overlaps the first cycle of \jwst\ science time, when these calibration stars will be observed. With the \tess\ data in hand, the \jwst\ calibration team will be able to inspect the calibration stars for flux changes and determine if the variability could impact the use of the star as a photometric standard. By getting data near to the same time as the \jwst\ calibration programs they will be sure the information on these stars is reasonably current. A few of the requested stars lie in or near the continuous viewing zone and so have a high probability of being observed at the same time as the \jwst.
+While ideally the \tess\ observations would occur at the same time as the \jwst\ observations, neither mission has flexibility in its scheduling to make that possible.  However, because \tess\ Cycle 4 overlaps the first cycle of \jwst\ science time, the observations will occur within a few months of each other, allowing the best chance to see the ``current'' state of the star's variability. Also, because \tess\ is able to observe in the infrared, like \jwst, the observed amplitudes of any variability will match those seen by \jwst.
 
-We request two-minute cadence monitoring for these stars to ensure we have the time resolution we need to understand any observed variability and to ensure we have the optimal light curves from the mission for analysis. The exposure times for the calibration stars are in some cases a few minutes and so understanding short changes in flux is important to understand how it can affect the calibration. Stellar flares, pulsations and occultations have all been detected on this time scale that could be missed at the ten minute cadence.
+We request two-minute cadence monitoring for these stars to ensure we have the time resolution required to find and understand any variability that could impact the ability of the star to act as a standard. The exposure times for the calibration stars are as small as few minutes and so understanding flux variations on this time scale will help interpret the calibration data. Stellar flares, pulsations and occultations have all been detected on this time scale that could be missed at the ten minute cadence.
 
 To further emphasize the importance of this sort of monitoring, an initial review of existing \tess\ data for these stars has shown variability on a few of the listed spectro-photometric standards. While in most cases the amplitudes of the pulsations are likely not large enough to impact the \jwst\ calibrations, these \tess\ observations will help us better understand the stellar astrophysics that can impact its ability to act as a spectro-photometric standard. Figure~\ref{fig:lc} shows the light curve of the standard star HD 38949 (TIC 32869782). This star shows peak-to-peak variations of 1\% at a period of approximately 7 days.
 
@@ -244,7 +247,7 @@ To further emphasize the importance of this sort of monitoring, an initial revie
 
 
 \section{Analysis Plan and Technical Feasibility}
-Thirty-one of the $\approx$50 \jwst\ spectro-photometric standards are observable during \tess\ Cycle 4.  They range in \tess\ magnitudes from 4 to 16, as such different levels of photometric precision can be monitored with the \tess\ data.  We plan to analyze the variability of these targets using the Lightkurve software package, a Python package for \kepler\ and \tess\ data analysis \citep{2018ascl.soft12013L}. We will look for both periodic variability and sudden changes in brightness. Periodic detections will be found using a periodogram and looking for significant peaks. Single events will be discovered by visual inspection of the light curve. We will report the limits of any detected variability, or indeed if any variability is detected, in a refereed paper and a  \jwst\ technical note.
+Thirty-one \jwst\ spectro-photometric standards are observable during \tess\ Cycle 4, six of which have less than two sectors of any existing TESS observations. We have listed the targets in priority order with those with fewer TESS observations at the top. The targets range in \tess\ magnitudes from 4.6 to 16 yielding a likely photometric precision from TESS of XX to XX, with significantly higher precision for periodic phenomena.  We plan to analyze the variability of these targets using the Lightkurve software package, a Python package for \kepler\ and \tess\ data analysis \citep{2018ascl.soft12013L}. We will look for both periodic variability and sudden changes in brightness using a variety of detection methods including periodograms, transit search algorithms and visual inspection. We will report the photometric limits, or any detected variability, in a refereed paper.
 
 
 %Discuss how you plan to analyze the \tess\ data. Provide text and figures showing that the proposed \tess\ investigations are feasible; consider the 
@@ -261,23 +264,25 @@ Thirty-one of the $\approx$50 \jwst\ spectro-photometric standards are observabl
 %[2] Person D \& Person E, 1912, Nature 495, 452
 
 
-\section{Target Table}
+%\section{Target Table}
 
-When necessary to justify your proposal, provide a list of targets using the below example as a template for format. This target table is designed to aid reviewers and need only provide a representative sample of the complete target list uploaded to RPS. Full target tables should be submitted electronically with the Phase-1 proposal. Please limit any target table included here to only 1 page. The table is not included in the page limit of the Science/Technical section. 
+%When necessary to justify your proposal, provide a list of targets using the below example as a template for format. This target table is designed to aid reviewers and need only provide a representative sample of the complete target list uploaded to RPS. Full target tables should be submitted electronically with the Phase-1 proposal. Please limit any target table included here to only 1 page. The table is not included in the page limit of the Science/Technical section. 
 
 
+\section{ Three Example Targets}
 \begin{center}
 \begin{tabular}{ | c | c | c | c | c | c | c | }
+
 \hline
 TIC ID          &      Common      &     RA             &      Dec          &      TESS       &       Obj.        &      Comments \\       
                     &      Name           &     (deg)          &      (deg)        &      mag         &       Type       &                         \\     
 \hline
 \hline
-388857263  &  Prox Cen           &  217.428793  &  -62.679592  &  7.36             &    M Dwarf    & 2 min cad., RV planet \\ \hline
-353622691  &  BL Lac               &   330.6803807    &   42.2777717    &   13.1  &   AGN            &    20 s cad.                                 \\ \hline
-                    &                           &                       &                      &                      &                     &                                     \\ \hline
-                    &                           &                       &                      &                      &                     &                                     \\ \hline
-                    &                           &                       &                      &                      &                     &                                     \\ \hline
+381024911 & ksi2 Cet & 37.0398 & 8.46006 & 4.328 & B9III & 2-min\\ \hline
+352817378 & LDS 749B & 323.0676365 & 0.253999538 & 14.778 & DBQ4 & 2-min\\ \hline
+397558558 & HD 106252 & 183.3729584	 & 10.04163578 & 6.85 & G0 & 2-min \\ \hline
+
+
 \end{tabular}
 \end{center}   
 
